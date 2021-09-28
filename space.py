@@ -1,5 +1,4 @@
 import pygame
-import os
 import random
 pygame.font.init()
 
@@ -22,7 +21,7 @@ BLUE_LASER = pygame.image.load("assets/pixel_laser_blue.png")
 YELLOW_LASER = pygame.image.load("assets/pixel_laser_yellow.png")
 
 # Background
-BG = pygame.transform.scale(pygame.image.load(os.path.join("assets", "background-black.png")), (WIDTH, HEIGHT))
+BG = pygame.transform.scale(pygame.image.load("assets/background-black.png"), (WIDTH, HEIGHT))
 
 
 class Laser:
